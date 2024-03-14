@@ -73,6 +73,7 @@ function testCinema() {
   cinema.bookSeat(1, 8);
   cinema.bookSeat(2, 5);
   cinema.bookSeat(5, 7);
+  cinema.bookSeat(3, 5);
 
   console.log("\nEstado de la sala después de las reservas:");
   cinema.matrixState();
