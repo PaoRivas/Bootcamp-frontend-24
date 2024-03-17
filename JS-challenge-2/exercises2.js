@@ -20,6 +20,10 @@ const removeDuplicates = (arr) => {
   return singleElements;
 };
 
+const myArray = [1, 2, 3, 4, 2, 3, 5];
+const uniqueArray = [...new Set(myArray)];
+console.log(uniqueArray);
+
 let arr2 = [3, 5, "g", 5, "d", 3, "d", 3, 2];
 console.log(removeDuplicates(arr2));
 
@@ -33,8 +37,16 @@ const concatArrays = (arr) => {
   return arrayJoined;
 };
 
+const concatArrays2 = (arr) => {
+  const joinElements = arr.reduce((acc, value) => {
+    return acc.concat(value.join(" "));
+  }, []);
+  return joinElements;
+};
+
 let data = [
   ["The", "little", "horse"],
   ["Plane", "over", "the", "ocean"],
 ];
 console.log(concatArrays(data));
+console.log(concatArrays2(data));
