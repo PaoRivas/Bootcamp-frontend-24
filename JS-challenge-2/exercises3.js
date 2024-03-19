@@ -16,8 +16,5 @@ const uniqueValue2 = myArray.find(
 console.log(uniqueValue2);
 
 const myArray2 = [1, 2, 3, 4, 2, 4, 1];
-const uniqueValue3 = myArray2.reduce((acc, value) => {
-  console.log(acc ^ value);
-  return acc ^ value;
-}, 0);
+const uniqueValue3 = myArray2.reduce((acc, value) => acc ^ value, 0);
 console.log(uniqueValue3);
