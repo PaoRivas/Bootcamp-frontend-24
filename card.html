@@ -5,34 +5,109 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Título de la página</title>
+    <!-- <style>
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+            width: 40%;
+        }
+
+        .card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .container {
+            padding: 2px 16px;
+        }
+    </style> -->
     <style>
         .card {
-            border: 1px solid #ccc;
+            border: 4px solid #ccc;
             border-radius: 8px;
-            padding: 20px;
+            /* padding: 10px; */
             margin: 20px;
-            text-align: center;
+            /* text-align: center; */
+            width: 300px;
         }
 
         .logo {
-            width: 100px;
-            height: auto;
+            width: 100%;
+            height: 120px;
         }
 
         .image {
-            width: 200px;
-            height: auto;
+            width: 100%;
+            height: 100%;
+            border-radius: 20%;
+        }
+
+        .middle {
+            background-color: black;
+            padding-top: 30px;
+            padding-right: 30px;
+            padding-bottom: 10px;
+            padding-left: 30px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .picture {
+            width: 100%;
+            height: 200px;
+            background-image: url(images/FotoPaolaRivas.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            border-radius: 20%;
+        }
+
+        .name {
+            margin-bottom: 0%;
+            color: white;
+            font-size: 32px;
+            font-weight: bold;
+            font-family: monospace;
+        }
+
+        .position {
+            margin: 0%;
+            padding: 10px;
+            color: white;
+            font-size: 32px;
+            font-weight: bold;
+            font-family: monospace;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            background-color: red;
         }
     </style>
 </head>
 
 <body>
+    <!-- <div class="card">
+        <img src="images/Jalasoft.png" alt="Avatar" style="width:100%">
+        <img src="images/PaoFoto.jpg" alt="Avatar" style="width:100%">
+        <div class="container">
+            <h4><b>John Doe</b></h4>
+            <p>Architect & Engineer</p>
+        </div>
+    </div> -->
     <div class="card">
-        <img src="logo.png" alt="Logo" class="logo">
+        <img src="images/Jalasoft.png" alt="Logo" class="logo">
+        <div class="middle">
+            <div class="picture">
+                <!-- <img src="images/PaoFoto.jpg" alt="Image" class="image"> -->
+            </div>
+            <p class="name">Paola Rivas</p>
+        </div>
+        <div class="container">
+            <p class="position">Developer</p>
+        </div>
 
-        <img src="image.jpg" alt="Image" class="image">
-
-        <p>Some text here...</p>
     </div>
 </body>
 
