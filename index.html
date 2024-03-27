@@ -6,50 +6,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Título de la página</title>
     <style>
-        .divborder {
-            border: 4px solid #ccc;
+        .inner-color {
+            border: 3px solid rgb(255, 0, 221);
+        }
 
+        .inner-f-div {
+            margin: 5px;
         }
 
         .main {
-            background-color: red;
+            background-color: blue;
+            border: 4px solid aqua;
+            width: 370px;
             display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            height: 490px;
         }
 
         .first {
-            background-color: yellow;
-            height: 50 px;
+            height: 40px;
+            border: 3px solid aqua;
+            margin-right: 20px;
+            margin-left: 20px;
         }
 
         .second {
-            background-color: red;
-            height: 50 px;
+            height: 20px;
+            border: 3px solid aqua;
+            margin-right: 40px;
+            margin-left: 40px;
         }
 
         .third {
-            background-color: red;
-            height: 50 px;
+            height: 250px;
+            margin-right: 40px;
+            margin-left: 40px;
         }
 
         .fourth {
-            background-color: red;
-            height: 50 px;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            border: 3px solid aqua;
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+
+        .f-one {
+            height: 60px;
+        }
+
+        .f-two {
+            height: 20px;
         }
     </style>
 </head>
 
 <body>
-    <div class="main divborder">
-        <div class="first divborder">
+    <div class="main">
+        <div class="first">
         </div>
-        <div class="second divborder">
+        <div class="second">
         </div>
-        <div class="third divborder">
+        <div class="third inner-color">
         </div>
-        <div class="fourth divborder">
-            <div class="f-one divborder">
+        <div class="fourth">
+            <div class="f-one inner-color inner-f-div">
             </div>
-            <div class="f-two divborder">
+            <div class="f-two inner-color inner-f-div">
             </div>
         </div>
     </div>
